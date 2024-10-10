@@ -1,7 +1,7 @@
 name: oggm_env
 channels:
   - conda-forge
-dependencies:
+dependencies: # these are provided by oggm
   - numpy
   - scipy
   - pandas
@@ -29,3 +29,15 @@ dependencies:
     - joblib
     - progressbar2
     - oggm
+    - xarray-regrid #this one is from Aguayo et al. (2024)'s workflow but is only on pip 
+
+  #adding dependencies from Aguayo et al. (2024)'s workflow - all available on Conda 
+  - psutil
+  - tqdm 
+  - xesmf 
+  - xclim
+  - intake 
+  - gcsfs 
+  - cftime 
+  - regionmask 
+  - ipykernel
