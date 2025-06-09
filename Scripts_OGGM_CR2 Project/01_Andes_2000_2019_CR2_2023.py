@@ -36,14 +36,10 @@ cfg.PARAMS["temp_melt"] = 0
 
 cfg.PARAMS['cfl_min_dt'] = 10 # para simular glaciares con problemas
 
-# # glacier call #############################
-# datos_rgi = pandas.read_csv('/home/caro/04_Andes_2000_2019_CR2_2023/datos/RGI_BNA_Clusters.csv')
-# # call parameters
-# datos_param = pandas.read_csv('/home/caro/04_Andes_2000_2019_CR2_2023/datos/LR_Pf.csv')
 # glacier call #############################
-datos_rgi = pandas.read_csv('/Users/milliespencer/Desktop/files_chile_OGGM_climate_comparison/cautin_RGI_BNA_Clusters.csv')
+datos_rgi = pandas.read_csv('/Users/milliespencer/Desktop/CR2_OGGM_Paper/files_chile_OGGM_climate_comparison/RGI_BNA_Clusters.csv')
 # call parameters
-datos_param = pandas.read_csv('/Users/milliespencer/Desktop/files_chile_OGGM_climate_comparison/LR_Pf.csv')
+datos_param = pandas.read_csv('/Users/milliespencer/Desktop/CR2_OGGM_Paper/files_chile_OGGM_climate_comparison/LR_Pf.csv')
 
 # # INICIO ITERACION por region GLACIO +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -55,7 +51,7 @@ for zona in list_region:
     
 # directorio
 #    zona = 'OT3'
-    salida = '/Users/milliespencer/Desktop/files_chile_OGGM_climate_comparison' + zona + '/'
+    salida = '/Users/milliespencer/Desktop/CR2_OGGM_Paper/files_chile_OGGM_climate_comparison' + zona + '/'
     cfg.PATHS['working_dir'] = salida                                 
 
 # extraccion de glaciares por zona

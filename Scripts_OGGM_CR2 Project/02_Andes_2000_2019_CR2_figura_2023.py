@@ -48,10 +48,9 @@ cfg.PARAMS["temp_all_liq"] = 2.0
 cfg.PARAMS["temp_melt"] = 0
 
 # glacier call #############################
-datos_rgi = pd.read_csv('/home/caro/04_Andes_2000_2019_CR2/datos/RGI_BNA_Clusters.csv')
+datos_rgi = pd.read_csv('/Users/milliespencer/Desktop/CR2_OGGM_Paper/files_chile_OGGM_climate_comparison/RGI_BNA_Clusters.csv')
 # call parameters
-datos_param = pd.read_csv('/home/caro/04_Andes_2000_2019_CR2/datos/LR_Pf.csv')
-
+datos_param = pd.read_csv('/Users/milliespencer/Desktop/CR2_OGGM_Paper/files_chile_OGGM_climate_comparison/LR_Pf.csv')
 
 
 # # INICIO ITERACION por region GLACIO +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -64,7 +63,7 @@ for zona in list_region:
     
 # directorio
  #   zona = 'OT3'
-    salida = '/home/caro/04_Andes_2000_2019_CR2/' + zona + '/'
+    salida = '/Users/milliespencer/Desktop/CR2_OGGM_Paper/' + zona + '/'
     cfg.PATHS['working_dir'] = salida                                 
     compilacion_zona = salida + 'run_output_2000_2019_hydro_TC_' + zona + '.nc'
 
